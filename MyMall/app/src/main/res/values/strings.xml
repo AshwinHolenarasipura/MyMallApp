@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MyMall</string>
+    <string name="CinemaFragment">cinema_fragment</string>
+    <string name="ShoppingFragment">shopping_frgment</string>
+    <string name="FoodFragment">food_fragment</string>
+    <string name="EntertainmentFragment">entertainment_fragment</string>
+    <string name="ServicesFragment">services_fragment</string>
+    <string name="PhotosFragment">photos_fragment</string>
+    <string name="ShoppingOffersFragment">shoppingoffers_fragment</string>
+    <string name="FoodOffersFragment">foodoffers_fragment</string>
+    <string name="entertainmentOffersFragment">entertainmentoffers_fragment</string>
+    <string name="CinemaOffersFragment">cinemaoffers_fragment</string>
+    <string name="StoryFragment">story_fragment</string>
+    <string name="MainImageFragment">main_image_fragment</string>
+    <string name="MainMovieOffersFragment">main_movie_offers_fragment</string>
+    <string name="LanguageSelectionFragment">language_selection_fragment</string>
+    <string name="MovieFeedFragment">movie_feed_fragment</string>
+    <string name="MainFragment">main_fragment</string>
+    <string name="incoming_shopid">shopid_incoming</string>
+    <string name="saturday">(Sat)</string>
+    <string name="Friday">(Fri)</string>
+    <string name="Thursday">(Thu)</string>
+    <string name="Wednesday">(Wed)</string>
+    <string name="Tuesday">(Tue)</string>
+    <string name="Monday">(Mon)</string>
+    <string name="Sunday">(Sun)</string>
+    <string name="closed">Closed</string>
+    <string name="opennow">Open Now</string>
+    <string name="openshortly">Opens Shortly</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

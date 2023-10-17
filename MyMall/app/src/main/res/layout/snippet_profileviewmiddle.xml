@@ -1,0 +1,280 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:id="@+id/rel">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/ic_man"
+            android:id="@+id/profileimage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/profileimage"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/profileimage"
+            android:text="ProfileName"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:id="@+id/profilenametxt"/>
+
+        <TextView
+            android:id="@+id/phonenotxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/logoutbutton"
+            android:layout_alignStart="@+id/profilenametxt"
+            android:text="Phone no"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/logoutbutton"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/profileimage"
+            android:layout_alignStart="@+id/phonenotxt"
+            android:backgroundTint="#F44336"
+            android:text="Log out"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/rel"
+            android:id="@+id/rel1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:text="General"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel2"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/rel1"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_notification"
+                android:id="@+id/notificationimg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/notificationimg"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/notificationimg"
+                android:text="Push Notifications"
+                android:textSize="14sp"
+                android:id="@+id/notificationtxt"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignStart="@+id/notificationimg"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_language"
+                android:id="@+id/languageimg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/notificationtxt"
+                android:layout_alignTop="@+id/languageimg"
+                android:text="Language"
+                android:textSize="14sp"
+                android:id="@+id/languagetxt"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/languageimg"
+                android:layout_marginBottom="13dp"
+                android:src="@drawable/ic_settings"
+                android:id="@+id/imageView3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/languagetxt"
+                android:layout_alignTop="@+id/imageView3"
+                android:text="App Settings"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/notificationtxt"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/rel2"
+            android:id="@+id/rel3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:text="More"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_below="@id/rel3"
+            android:id="@+id/rel4"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_about"
+                android:id="@+id/aboutimg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/aboutimg"
+                android:layout_marginStart="18dp"
+                android:layout_toEndOf="@+id/aboutimg"
+                android:text="About Us"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:id="@+id/abouttxt"/>
+
+            <ImageView
+                android:id="@+id/termsimg"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignStart="@+id/aboutimg"
+                android:layout_below="@+id/aboutimg"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_terms" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/abouttxt"
+                android:layout_alignTop="@+id/termsimg"
+                android:text="Terms and Policies"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:id="@+id/termstxt" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignStart="@+id/termsimg"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_share"
+                android:id="@+id/shareimg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/termstxt"
+                android:layout_alignTop="@+id/shareimg"
+                android:text="Share our App"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:id="@+id/sharetxt"/>
+
+            <ImageView
+                android:id="@+id/starimg"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignStart="@+id/shareimg"
+                android:layout_below="@+id/shareimg"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/ic_star" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/sharetxt"
+                android:layout_alignTop="@+id/starimg"
+                android:text="Rate Us"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:id="@+id/ratetxt"/>
+
+            <ImageView
+                android:id="@+id/feedbackimg"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/starimg"
+                android:layout_marginBottom="13dp"
+                android:src="@drawable/ic_feedback"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ratetxt"
+                android:layout_alignTop="@+id/feedbackimg"
+                android:text="Send Feedback"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:id="@+id/feedbacktxt"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</merge>

@@ -1,0 +1,813 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relmainimg"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/white">
+
+                <ss.com.bannerslider.views.BannerSlider
+                    android:id="@+id/banner_slider1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    app:defaultIndicators="circle"
+                    app:interval="3000"
+                    app:loopSlides="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_below="@id/relmainimg"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/newtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="What's New ?"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="30dp"
+                    app:cardElevation="1dp"
+                    app:cardMaxElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/outercircle"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="7dp"
+                            android:src="@color/white"
+                            app:civ_border_color="@color/red"
+                            app:civ_border_width="2dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/listimages"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="14dp" />
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="-----------"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginTop="30dp"
+                    app:cardElevation="1dp"
+                    app:cardMaxElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="7dp"
+                            android:src="@color/white"
+                            app:civ_border_color="@color/red"
+                            app:civ_border_width="2dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/listimages1"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="14dp" />
+
+                        <TextView
+                            android:id="@+id/name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="-----------"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="30dp"
+                    app:cardElevation="1dp"
+                    app:cardMaxElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="7dp"
+                            android:src="@color/white"
+                            app:civ_border_color="@color/red"
+                            app:civ_border_width="2dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/listimages2"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="14dp" />
+
+                        <TextView
+                            android:id="@+id/name2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="-----------"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="270dp"
+                    android:layout_marginTop="30dp"
+                    app:cardElevation="1dp"
+                    app:cardMaxElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="7dp"
+                            android:src="@color/white"
+                            app:civ_border_color="@color/red"
+                            app:civ_border_width="2dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/listimages3"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="14dp" />
+
+                        <TextView
+                            android:id="@+id/name3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="-----------"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/cinematxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="19dp"
+                android:text="CINEMA"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/cinematxt"
+                android:layout_marginTop="11dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/cinemacontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp">
+
+                    <TextView
+                        android:id="@+id/nocinemafoundtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Sorry no Cinema found here:("
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/framelayout1"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/frameLayout"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/cinemaofferscontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/buzzlay1"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:layout_below="@id/framelayout1"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/movie_buzz">
+
+
+                <TextView
+                    android:id="@+id/moviebuzztxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginTop="11dp"
+                    android:text="Movie Buzz"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:id="@+id/moviebuzz_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/moviebuzztxt"
+                    android:layout_marginTop="12dp">
+
+                </FrameLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/shoppingtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buzzlay1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="35dp"
+                android:text="SHOPPING"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/frameLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_below="@id/shoppingtxt"
+                android:layout_marginTop="11dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/shoppingcontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp">
+
+                    <TextView
+                        android:id="@+id/noshoppingfoundtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Sorry no shops found here:("
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="invisible" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/laycategory"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/frameLayout2"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <FrameLayout
+                    android:id="@+id/category_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frameLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_below="@id/laycategory"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/shoppingofferscontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp">
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/buzzlay2"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:layout_below="@id/frameLayout3"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/shoppingbuzzer">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="#66000000" />
+
+                <TextView
+                    android:id="@+id/shoppinbuzztxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginTop="11dp"
+                    android:text="Shopping Buzz"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:id="@+id/shoppingbuzz_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/shoppinbuzztxt"
+                    android:layout_marginTop="12dp">
+
+                </FrameLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/foodtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buzzlay2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="35dp"
+                android:text="FOOD"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/frameLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_below="@id/foodtxt"
+                android:layout_marginTop="11dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/foodcontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp">
+
+                    <TextView
+                        android:id="@+id/nofoodfoundtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Sorry no Food courts found here:("
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="invisible" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layfoodcategory"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/frameLayout4"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <FrameLayout
+                    android:id="@+id/food_category_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frameLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_below="@id/layfoodcategory"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/foodofferscontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"></RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/buzzlay3"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:layout_below="@id/frameLayout5"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/foodbuzz1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="#66000000" />
+
+                <TextView
+                    android:id="@+id/foodbuzztxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="11dp"
+                    android:text="Food Buzz"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:id="@+id/foodbuzz_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/foodbuzztxt"
+                    android:layout_marginTop="12dp">
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/entertainmenttxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buzzlay3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="35dp"
+                android:text="ENTERTAINMENT"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/frameLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_below="@id/entertainmenttxt"
+                android:layout_marginTop="11dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/entertainmentcontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp">
+
+                    <TextView
+                        android:id="@+id/noEntertainmentfoundtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Sorry not available here:("
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="invisible" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frameLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_below="@id/frameLayout6"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/entertainmentofferscontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp">
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/eventstxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frameLayout7"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="35dp"
+                android:text="SERVICES"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/frameLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_below="@id/eventstxt"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/servicescontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp">
+
+                    <TextView
+                        android:id="@+id/noeventsfoundtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Sorry no events taking palce:("
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="invisible" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/photosimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frameLayout8"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="35dp"
+                android:text="PHOTOS"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/frameLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_below="@id/photosimg"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/photoscontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp">
+
+                    <TextView
+                        android:id="@+id/nophotosfoundtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Sorry no photos found:("
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="invisible" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/frameLayout9"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:paddingTop="30dp">
+
+                <TextView
+                    android:id="@+id/termsandcondition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="7dp"
+                    android:text="Terms and Conditions"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/partnerwithus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/termsandcondition"
+                    android:layout_alignBottom="@+id/termsandcondition"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:text="Partner with us"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/connectwithus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/termsandcondition"
+                    android:layout_centerVertical="true"
+                    android:text="Connect with us"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/contacttus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/connectwithus"
+                    android:layout_alignBottom="@+id/connectwithus"
+                    android:layout_alignStart="@+id/partnerwithus"
+                    android:text="Contact us"
+                    android:textColor="@color/blue" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</merge>

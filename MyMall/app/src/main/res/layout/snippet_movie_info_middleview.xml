@@ -1,0 +1,426 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rel"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:background="@color/grey">
+
+                <ImageView
+                    android:id="@+id/moviecontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop">
+                </ImageView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="#66000000"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_play_arrow"
+                    android:id="@+id/playbtn"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/rel"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/grey">
+
+                    <ImageView
+                        android:id="@+id/movieimagecontainer"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:scaleType="centerCrop">
+
+                    </ImageView>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/moviename1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/relativeLayout2"
+                    android:layout_marginStart="22dp"
+                    android:layout_toEndOf="@+id/relativeLayout2"
+                    android:text="Movie Name"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/movieduration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/moviename1"
+                    android:layout_below="@+id/moviename1"
+                    android:layout_marginTop="7dp"
+                    android:text="1hr 58min | 4 Mar 18"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/genre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/movieduration"
+                    android:layout_below="@+id/movieduration"
+                    android:layout_marginTop="7dp"
+                    android:text="Action, Adventure, Thriller"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/genre"
+                    android:layout_below="@+id/genre"
+                    android:layout_marginTop="7dp"
+                    android:text="language"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/theatertype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/language"
+                    android:layout_below="@+id/language"
+                    android:layout_marginTop="7dp"
+                    android:text="IMAX 2D, IMAX 3D, 3D, 2D"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/rel1"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/userratingtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="14dp"
+                    android:text="User's Rating -"
+                    android:textColor="@color/turquios1"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/userrating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/userratingtxt"
+                    android:layout_alignBottom="@+id/userratingtxt"
+                    android:layout_marginStart="11dp"
+                    android:layout_toEndOf="@+id/userratingtxt"
+                    android:text="4.0"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/totalratingtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/userrating"
+                    android:layout_alignBottom="@+id/userrating"
+                    android:layout_toEndOf="@+id/userrating"
+                    android:text="/5"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/criticsratingtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/userratingtxt"
+                    android:layout_below="@+id/userrating"
+                    android:layout_marginTop="15dp"
+                    android:text="Critic's Rating - "
+                    android:textColor="@color/turquios1"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/criticrating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/criticsratingtxt"
+                    android:layout_alignBottom="@+id/criticsratingtxt"
+                    android:layout_alignStart="@+id/userrating"
+                    android:text="4.0"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/totalcriticsratingtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/criticrating"
+                    android:layout_alignBottom="@+id/criticrating"
+                    android:layout_toEndOf="@+id/criticrating"
+                    android:text="/5"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_alignBottom="@+id/userrating"
+                    android:layout_toEndOf="@+id/totalratingtext"
+                    android:src="@drawable/ic_star" />
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_alignBottom="@+id/criticrating"
+                    android:layout_toEndOf="@+id/totalcriticsratingtxt"
+                    android:src="@drawable/ic_star" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_alignBottom="@+id/criticsratingtxt"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    app:cardCornerRadius="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="27dp"
+                        android:text="Rate the movie"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="35dp"
+                        android:src="@drawable/ic_star" />
+
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relm"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_below="@id/rel2"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/showtimingstxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Show Timings"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel3"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:layout_below="@id/relm"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/synopsistxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Synopsis"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/synopsistxt"
+                    android:layout_marginEnd="13sp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Sample Text"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel4"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/rel3"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/interestimg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_interest" />
+
+                <TextView
+                    android:id="@+id/interestnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/interestimg"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_toEndOf="@+id/interestimg"
+                    android:text="220"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/peopletxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/watchtxt"
+                    android:layout_marginStart="7dp"
+                    android:layout_toEndOf="@+id/interestnum"
+                    android:text="people"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/watchtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/interestnum"
+                    android:layout_below="@+id/interestnum"
+                    android:text="Interested in Watching"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/rel4"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/leadcasttxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="11dp"
+                    android:text="Lead Cast"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <FrameLayout
+                    android:id="@+id/leadcastcontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/leadcasttxt"
+                    android:paddingTop="10dp">
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel6"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/rel5"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/crewtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Crew"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <FrameLayout
+                    android:id="@+id/crewcontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/crewtxt"
+                    android:paddingTop="10dp">
+
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel7"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_below="@id/rel6"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/reviewtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Reviews"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/reviewtxt"
+                    android:layout_alignBottom="@+id/reviewtxt"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="19dp"
+                    android:text="View all"
+                    android:textColor="@color/blue1"
+                    android:textSize="13sp" />
+
+                <FrameLayout
+                    android:id="@+id/reviewcontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/reviewtxt"
+                    android:layout_marginTop="5dp">
+
+                </FrameLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</merge>

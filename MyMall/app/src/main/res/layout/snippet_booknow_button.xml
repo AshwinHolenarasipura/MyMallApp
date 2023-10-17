@@ -1,0 +1,47 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/booknowbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/blue1" />
+
+        <ImageView
+            android:id="@+id/movieimg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="63dp"
+            android:src="@drawable/ic_local_movies" />
+
+        <TextView
+            android:id="@+id/booktxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView6"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/movieimg"
+            android:text="Book Tickets Here"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/booktxt"
+            android:src="@drawable/ic_arrow_forward"
+            android:id="@+id/imageView6" />
+
+
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,53 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/white"
+                android:id="@+id/relmovieimg">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:id="@+id/movieimgcontainer">
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/languageselection"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relmovieimg"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/languageselectioncontainer">
+
+                </FrameLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:layout_below="@id/languageselection"
+                android:background="@color/white"
+                android:layout_marginTop="10dp">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="370dp"
+                    android:id="@+id/moviefeedcontainer">
+
+                </FrameLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</merge>

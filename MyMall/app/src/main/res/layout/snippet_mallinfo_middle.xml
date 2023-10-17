@@ -1,0 +1,262 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rel"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/grey">
+
+                <ImageView
+                    android:id="@+id/mallinfoimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_availability"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/rel"
+                android:background="@color/white"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/availability_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="General Info"
+                    android:textColor="@color/turquios"
+                    android:textSize="13sp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/availability_txt">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/recyclerview"
+                        android:orientation="horizontal">
+
+                    </android.support.v7.widget.RecyclerView>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relr"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/rel_availability"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/mallavgratingtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="32dp"
+                    android:text="Mall Avg Rating - "
+                    android:textColor="@color/turquios1"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/mallrating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/mallavgratingtxt"
+                    android:layout_alignBottom="@+id/mallavgratingtxt"
+                    android:layout_marginStart="11dp"
+                    android:layout_toEndOf="@+id/mallavgratingtxt"
+                    android:text="4.0"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/totalmallratingtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/mallrating"
+                    android:layout_alignBottom="@+id/mallrating"
+                    android:layout_toEndOf="@+id/mallrating"
+                    android:text="/5"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_alignBottom="@+id/mallavgratingtxt"
+                    android:layout_toEndOf="@+id/totalmallratingtext"
+                    android:src="@drawable/ic_star" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_alignBottom="@+id/criticsratingtxt"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="13dp"
+                    app:cardCornerRadius="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="27dp"
+                        android:text="Rate the mall"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="35dp"
+                        android:src="@drawable/ic_star" />
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/relr"
+                android:layout_marginTop="7dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/malltimingstxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="14dp"
+                    android:text="Mall Timings -"
+                    android:textColor="@color/turquios1"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/malltimings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/malltimingstxt"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@+id/malltimingstxt"
+                    android:text="10:00AM to 11:00PM"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel1"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@id/relt"
+                android:layout_marginTop="7dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/aboutmalltxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="About Mall"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mallinfotxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/aboutmalltxt"
+                    android:layout_below="@+id/aboutmalltxt"
+                    android:layout_marginTop="12dp"
+                    android:text="sample text hello world"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/rel1"
+                android:layout_marginTop="7dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/locationtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Location"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/addresstxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/locationtxt"
+                    android:layout_below="@+id/locationtxt"
+                    android:layout_marginTop="12dp"
+                    android:text="address"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel3"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_below="@id/rel2"
+                android:layout_marginTop="7dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/mallreviewtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Reviews"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/mallreviewtxt"
+                    android:layout_alignBottom="@+id/mallreviewtxt"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="19dp"
+                    android:text="View all"
+                    android:textColor="@color/blue1"
+                    android:textSize="13sp" />
+
+                <FrameLayout
+                    android:id="@+id/mallreviewcontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/mallreviewtxt"
+                    android:layout_marginTop="5dp">
+
+                </FrameLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</merge>
